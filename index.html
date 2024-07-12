@@ -1,423 +1,226 @@
 <!DOCTYPE html>
-<html lang="zxx">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Videograph Template">
-    <meta name="keywords" content="Videograph, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <title>Get Free Voucher Code</title>
+    <style>
+        /* General styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
 
-    <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            text-align: center; /* Center align all content */
+        }
+
+        .title {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .content {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-align: left; /* Adjust text alignment as needed */
+        }
+
+        .button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .link-button {
+            background-color: #008CBA;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .link-button:hover {
+            background-color: #005f6b;
+        }
+
+        /* Styling for the voucher popup */
+        .voucher-popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: white;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            z-index: 1000;
+            border-radius: 8px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .voucher-popup h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .voucher-popup p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .voucher-popup .button {
+            background-color: #555;
+            transition: background-color 0.3s ease;
+        }
+
+        .voucher-popup .button:hover {
+            background-color: #333;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                padding: 10px;
+            }
+            .title {
+                font-size: 28px;
+            }
+            .content {
+                font-size: 16px;
+            }
+            .button {
+                font-size: 14px;
+                padding: 12px 24px;
+                margin-bottom: 15px;
+            }
+            .voucher-popup {
+                padding: 15px;
+                max-width: 100%;
+            }
+            .voucher-popup h2 {
+                font-size: 20px;
+            }
+            .voucher-popup p {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
-
 <body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
+
+<div class="container">
+    <h1 class="title">Get Your Free Voucher Code</h1>
+    <div class="content" id="voucherSteps">
+        <p>Thank you for your interest in our free voucher code offer!</p>
+        <p>To receive your free voucher code, please follow these steps:</p>
+        <ol>
+            <li>Click the button below to get a free voucher code.</li>
+            <li>Return to our portal and enter your voucher code in the input field.</li>
+            <li>Click the "Connect" button to activate your internet access.</li>
+        </ol>
+        <p>Enjoy seamless and high-speed internet access!</p>
     </div>
-
-    <!-- Header Section Begin -->
-    <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-2">
-                    <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
-                    </div>
-                </div>
-                <div class="col-lg-10">
-                    <div class="header__nav__option">
-                        <nav class="header__nav__menu mobile-menu">
-                            <ul>
-                                <li class="active"><a href="./index.html">Home</a></li>
-                                <li><a href="./contact.html">Contact</a></li>
-                            </ul>
-                        </nav>
-                        <div class="header__nav__social">
-                            <a href="https://www.facebook.com/LeiradNoznag/"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="mobile-menu-wrap"></div>
-        </div>
-    </header>
-    <!-- Header End -->
-
-    <!-- Hero Section Begin -->
-    <section class="hero">
-        <div class="hero__slider owl-carousel">
-            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <span>VARD's HOTSPOT</span>
-                                <h2>Wifi Rates | Voucher Code</h2>
-                                <a href="#" class="primary-btn">See more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <span>VARD's HOTSPOT</span>
-                                <h2>Free Voucher Code | 1hr</h2>
-                                <a href="#" class="primary-btn">See more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="hero__item set-bg" data-setbg="img/hero/hero-1.jpg">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <div class="hero__text">
-                                <span>VARD's HOTSPOT</span>
-                                <h2>Fast Wifi Internet Hotspot</h2>
-                                <a href="#" class="primary-btn">See more</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Counter Section Begin -->
-    <section class="counter">
-        <div class="container">
-            <div class="counter__content">
-                <div class="row">
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-1.png" alt="">
-                                <h2 class="counter_num">30</h2>
-                                <p>Compled Projects</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item second__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-2.png" alt="">
-                                <h2 class="counter_num">18</h2>
-                                <p>Happy clients</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item third__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-3.png" alt="">
-                                <h2 class="counter_num">20</h2>
-                                <p>Perspective clients</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 col-sm-6">
-                        <div class="counter__item four__item">
-                            <div class="counter__item__text">
-                                <img src="img/icons/ci-4.png" alt="">
-                                <h2 class="counter_num">10</h2>
-                                <p>Compled Projects</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Counter Section End -->
-
-    <!-- Team Section Begin -->
-    <section class="team spad set-bg" data-setbg="img/team-bg.jpg">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title team__title">
-                        <span>Nice to meet</span>
-                        <h2>OUR FAMILY</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item set-bg" data-setbg="img/dariel.png">
-                        <div class="team__item__text">
-                            <h4>Dariel GANZON</h4>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item team__item--second set-bg" data-setbg="img/amada.png">
-                        <div class="team__item__text">
-                            <h4>AMADA GANZON</h4>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item team__item--third set-bg" data-setbg="img/rechel.png">
-                        <div class="team__item__text">
-                            <h4>RECHEL GANZON</h4>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item team__item--four set-bg" data-setbg="img/victor.png">
-                        <div class="team__item__text">
-                            <h4>Victor GANZON</h4>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-				                <div class="col-lg-3 col-md-6 col-sm-6 p-0">
-                    <div class="team__item set-bg" data-setbg="img/roliemae.png">
-                        <div class="team__item__text">
-                            <h4>Rolie Mae Tillo</h4>
-                            <div class="team__item__social">
-                                <a href="#"><i class="fa fa-facebook"></i></a>
-                                <a href="#"><i class="fa fa-twitter"></i></a>
-                                <a href="#"><i class="fa fa-dribbble"></i></a>
-                                <a href="#"><i class="fa fa-instagram"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-12 p-0">
-                    <div class="team__btn">
-                        <a href="#" class="primary-btn">Meet Our Family</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Team Section End -->
-
-    <!-- Latest Blog Section Begin -->
-    <section class="latest spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title center-title">
-                        <span>Our Blog | Vard's</span>
-                        <h2>Blog Update</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="latest__slider owl-carousel">
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>What are WiFi Hotspot Voucher Codes?</h4>
-                            <ul>
-                                <li>Jan 03, 2024</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>WiFi hotspot voucher codes are unique codes that grant users access to your WiFi network for a specified period. These codes can be generated, managed, and customized to suit your business needs. By implementing a voucher code system, you can control and monitor WiFi usage while providing a convenient service to your customers.</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>How can WiFi hotspot voucher codes improve network security?</h4>
-                            <ul>
-                                <li>Jan 05, 2024</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>Voucher codes enhance network security by ensuring only authorized users can access the WiFi. Each code is unique and can be set with specific usage limits, reducing the risk of unauthorized access and potential cyber threats. By controlling who uses the network and for how long, you can maintain a more secure environment.</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>Can I customize the voucher codes for different user needs?</h4>
-                            <ul>
-                                <li>Jan 10, 2024</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>Yes, you can customize voucher codes based on your business model and customer needs. For example, you can create vouchers with varying time limits (e.g., 30 minutes, 1 hour, 1 day) or different bandwidth limits. This flexibility allows you to offer tailored access plans to different types of customers.</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>How can WiFi hotspot voucher codes benefit my business financially?</h4>
-                            <ul>
-                                <li>Jan 16, 2024</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>WiFi hotspot voucher codes can create additional revenue streams for your business. You can charge for premium access, offer extended WiFi time for a fee, or bundle WiFi access with other services or products. Additionally, providing reliable WiFi can attract more customers, leading to increased sales and longer customer visits.</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>What are some effective ways to distribute WiFi voucher codes?</h4>
-                            <ul>
-                                <li>Jan 22, 2024</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>There are several methods to distribute WiFi voucher codes:
-							    Printed Receipts: Include the voucher code on customers’ receipts.
-								SMS or Email: Send the voucher codes directly to customers' phones or email addresses.
-								Loyalty Apps: Integrate the voucher codes into your customer loyalty program or mobile app.
-								At the Point of Sale: Hand out voucher codes at the cash register or service desk.</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>How do I monitor and manage WiFi usage with voucher codes?</h4>
-                            <ul>
-                                <li>Jan 27, 2024</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>Most WiFi management software includes tools for monitoring and managing voucher usage. You can track how many vouchers have been used, monitor data consumption, and see how long users stay connected. This data helps you optimize your WiFi offerings and ensure a smooth experience for all users.</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="blog__item latest__item">
-                            <h4>Are there any success stories of businesses using WiFi hotspot voucher codes?</h4>
-                            <ul>
-                                <li>Jan 30, 2024</li>
-                                <li>05 Comment</li>
-                            </ul>
-                            <p>Yes, there are many success stories:
-								Café Central: They saw a 20% increase in customer dwell time and a boost in sales by offering 30-minute free access vouchers with each purchase.
-								Hotel Harmony: They differentiated themselves from competitors by offering premium WiFi access for luxury suite bookings, resulting in a 15% increase in bookings for premium rooms.
-								Workspace Hub: They created flexible access plans for freelancers and small businesses, leading to a user-friendly environment and increased customer satisfaction.</p>
-                            <a href="#">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Latest Blog Section End -->
-
-    <!-- Footer Section Begin -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__top">
-                <div class="row">
-                    <div class="col-lg-6 col-md-6">
-                        <div class="footer__top__social">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-dribbble"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-youtube-play"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__option">
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-sm-6">
-                        <div class="footer__option__item">
-                            <h5>About us</h5>
-                            <p>We are Ganzon Family from Tubod, Aloran, Misamis Occidental.</p>
-                            <a href="#" class="read__more">Read more <span class="arrow_right"></span></a>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-md-3 col-sm-3">
-                        <div class="footer__option__item">
-                            <h5>Who we are</h5>
-                            <ul>
-                                <li><a href="#">Family</a></li>
-                                <li><a href="#">Carrers</a></li>
-                                <li><a href="#">Contact us</a></li>
-                                <li><a href="#">Locations</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-12">
-                        <div class="footer__option__item">
-                            <h5>Send Message</h5>
-                            <p>If you have any concern about your wifi connection just let us know or send us an messages.</p>
-                            <form action="#">
-                                <input type="text" placeholder="Email">
-                                <button type="submit"><i class="fa fa-send"></i></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="footer__copyright">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                        <p class="footer__copyright__text">Copyright &copy;
-                            <script>
-                                document.write(new Date().getFullYear());
-                            </script>
-                            All rights reserved <i class="fa fa-heart-o"
-                                aria-hidden="true"></i> by <a href="https:" target="_blank">Ganzon Family</a>
-                        </p>
-                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-                    </div>
-                </div>
-            </div>
-        </div>
+    <button class="button" id="showStepsButton">Get Free Voucher Code</button>
+    <p><a href="main.html" class="link-button">Back to Home</a></p>
+    <footer>
+        <p>&copy; 2024 Dariel Ganzon. All rights reserved.</p>
     </footer>
-    <!-- Footer Section End -->
+</div>
 
-    <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/masonry.pkgd.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+<!-- Voucher popup content -->
+<div id="voucherPopup" class="voucher-popup">
+    <h2>Your Free Voucher Code</h2>
+    <p id="voucherCode"></p>
+    <p>Follow the steps above to use this voucher code.</p>
+    <button class="button" onclick="closeVoucherPopup()">Close</button>
+</div>
+
+<!-- JavaScript -->
+<script>
+    // Predefined list of voucher codes
+    var voucherCodes = [
+        { code: "123456", claimed: false },
+        { code: "7890", claimed: false },
+        { code: "1232", claimed: false },
+        { code: "1231", claimed: false },
+        { code: "31231", claimed: false },
+        { code: "123123", claimed: false },
+        { code: "dawdaw", claimed: false },
+        { code: "2323da", claimed: false },
+        { code: "4343d", claimed: false },
+        { code: "dawdawd", claimed: false }
+    ];
+    
+    // Function to handle showing the voucher popup
+    document.getElementById('showStepsButton').addEventListener('click', function() {
+        var claimedVoucherCode = localStorage.getItem('voucherCode');
+        
+        if (claimedVoucherCode) {
+            alert("You have already claimed a voucher code.");
+            return;
+        }
+        
+        var availableVoucher = voucherCodes.find(voucher => !voucher.claimed);
+        
+        if (availableVoucher) {
+            availableVoucher.claimed = true;
+            localStorage.setItem('voucherCode', availableVoucher.code);
+            
+            document.getElementById('voucherCode').textContent = availableVoucher.code;
+            document.getElementById('voucherPopup').style.display = 'block';
+            document.getElementById('showStepsButton').disabled = true;
+        } else {
+            alert("All voucher codes have been taken. Please check back later.");
+        }
+    });
+
+    // Function to close the voucher popup
+    function closeVoucherPopup() {
+        document.getElementById('voucherPopup').style.display = 'none';
+    }
+
+    // On page load, check if voucher code has been previously claimed and disable button if needed
+    window.onload = function() {
+        var claimedVoucherCode = localStorage.getItem('voucherCode');
+        if (claimedVoucherCode) {
+            document.getElementById('voucherCode').textContent = claimedVoucherCode;
+            document.getElementById('voucherPopup').style.display = 'block';
+            document.getElementById('showStepsButton').disabled = true;
+        }
+    };
+</script>
+
 </body>
-
 </html>
